@@ -1,0 +1,59 @@
+﻿<Page x:Class="MW5MercsEnhancedStats.Pages.NewMission"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MW5MercsEnhancedStats.Pages"
+      xmlns:controls="clr-namespace:MW5MercsEnhancedStats.Controlls"
+      mc:Ignorable="d" 
+      d:DesignHeight="760" d:DesignWidth="1300"
+      Title="NewMission">
+
+    <StackPanel Orientation="Vertical" Background="#33000000">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+                <ColumnDefinition Width="1080"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource MWLabel}" x:Name="lblTitle">New Mission</Label>
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Style="{StaticResource MWButton}" x:Name="btnClear">Clear</Button>
+                <Button Style="{StaticResource MWButton}" x:Name="btnSave">Save</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Height="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+                <ColumnDefinition Width="1250"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="725"></RowDefinition>
+            </Grid.RowDefinitions>
+            <controls:MissionSummary Grid.Column="0" Grid.Row="0"></controls:MissionSummary>
+            <StackPanel Grid.Column="1" Width="1250">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="400"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"></ColumnDefinition>
+                        <ColumnDefinition Width="250"></ColumnDefinition>
+                        <ColumnDefinition Width="250"></ColumnDefinition>
+                        <ColumnDefinition Width="250"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <controls:LoadOut Grid.Column="0" x:Name="lo1"></controls:LoadOut>
+                    <controls:LoadOut Grid.Column="1" x:Name="lo2"></controls:LoadOut>
+                    <controls:LoadOut Grid.Column="2" x:Name="lo3"></controls:LoadOut>
+                    <controls:LoadOut Grid.Column="3" x:Name="lo4"></controls:LoadOut>
+                </Grid>
+                <StackPanel Orientation="Vertical" Width="1250">
+                    
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+
+</Page>

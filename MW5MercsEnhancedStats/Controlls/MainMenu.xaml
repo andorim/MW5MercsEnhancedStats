@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="MW5MercsEnhancedStats.Controlls.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MW5MercsEnhancedStats.Controlls"
+             mc:Ignorable="d" 
+             d:DesignHeight="660" d:DesignWidth="1350"  Width="1350" Height="660" MaxWidth="1350" MaxHeight="660">
+    <UserControl.Resources>
+        <Storyboard x:Key="slideIn" x:Name="sBslideIn">
+            <ThicknessAnimation Duration="0:0:0.2" Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" Storyboard.TargetName="spMenu"></ThicknessAnimation>
+        </Storyboard>
+        <Storyboard x:Key="slideOut" x:Name="sBslideOut">
+            <ThicknessAnimation Duration="0:0:0.2" Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-150,0,0,0" Storyboard.TargetName="spMenu"></ThicknessAnimation>
+        </Storyboard>
+    </UserControl.Resources>
+    <StackPanel Orientation="Vertical" Height="660" Width="150" HorizontalAlignment="Left" Background="#F7000000" x:Name="spMenu">
+        <Image Source="../Resources/Pictures/Logo145.png" Width="145" Height="145"></Image>
+        <Button Style="{StaticResource MWButton}" x:Name="btnNewMission" Click="btnNewMission_Click">NEW MISSION</Button>
+        <Button Style="{StaticResource MWButton}">TEST 2</Button>
+        <Button Style="{StaticResource MWButton}">TEST 3</Button>
+        <Button Style="{StaticResource MWButton}">TEST 4</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btnHide" Margin="0,300,0,0" Click="btnHide_Click">HIDE </Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btnClose" Click="btnClose_Click" >CLOSE APP</Button>
+    </StackPanel>
+</UserControl>

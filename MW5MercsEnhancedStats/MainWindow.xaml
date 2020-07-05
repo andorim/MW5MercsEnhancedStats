@@ -4,9 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MW5MercsEnhancedStats"
+        xmlns:interop="clr-namespace:Walterlv.Demo.Interop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        interop:WindowBlur.IsEnabled="True"
+        Title="MainWindow" Height="700" Width="1350" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Window.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="Background" Value="#00000000"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid  Background="#90000000">
         
+        <StackPanel Orientation="Vertical" Margin="3" >
+            <StackPanel x:Name="spNavigation" Orientation="Horizontal" MouseDown="spNavigation_MouseDown" Width="1350" Height="40" Background="#4C000000">
+                <Button x:Name="btMenu" Click="btMenu_Click" Width="40" Style="{StaticResource HamburgerButton}">=</Button>
+            </StackPanel>
+            <Grid x:Name="grMain" HorizontalAlignment="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="660"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1350"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame x:Name="frMain" Margin="0,0,0,0">
+
+                </Frame>
+            </Grid>
+        </StackPanel>
     </Grid>
+    
+
 </Window>
