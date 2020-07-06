@@ -18,29 +18,18 @@ using MW5MercsEnhancedStats.Controlls;
 namespace MW5MercsEnhancedStats.Pages
 {
     /// <summary>
-    /// Interaktionslogik für NewMission.xaml
+    /// Interaktionslogik für SalvagePage.xaml
     /// </summary>
-    public partial class NewMission : Page
+    public partial class SalvagePage : Page
     {
-        LoadOutPage loadOutPage;
-        SalvagePage salvagePage;
-        
-        public NewMission()
+        public SalvagePage()
         {
-            loadOutPage = new LoadOutPage();
-            salvagePage = new SalvagePage();
             InitializeComponent();
-            frLoadSal.Navigate(loadOutPage);
         }
 
-        private void btnLoadOut_Click(object sender, RoutedEventArgs e)
+        private void btAddSalvage_Click(object sender, RoutedEventArgs e)
         {
-            frLoadSal.Navigate(loadOutPage);
-        }
-
-        private void btnSalvage_Click(object sender, RoutedEventArgs e)
-        {
-            frLoadSal.Navigate(salvagePage);
+            spSalvage.Children.Add(new ListItemSalvage());
         }
     }
 }
