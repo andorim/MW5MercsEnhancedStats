@@ -16,11 +16,19 @@
     </UserControl.Resources>
     <StackPanel Orientation="Vertical" Height="660" Width="150" HorizontalAlignment="Left" Background="#F7000000" x:Name="spMenu">
         <Image Source="../Resources/Pictures/Logo145.png" Width="145" Height="145"></Image>
-        <Button Style="{StaticResource MWButton}" x:Name="btnNewMission" Click="btnNewMission_Click">NEW MISSION</Button>
-        <Button Style="{StaticResource MWButton}">TEST 2</Button>
-        <Button Style="{StaticResource MWButton}">TEST 3</Button>
-        <Button Style="{StaticResource MWButton}">TEST 4</Button>
-        <Button Style="{StaticResource MWButton}" x:Name="btnHide" Margin="0,300,0,0" Click="btnHide_Click">HIDE </Button>
+        <Label Style="{StaticResource MWLabel}">Action</Label>
+        <Button Style="{StaticResource MWButton}" Margin="0"  x:Name="btnNewMission" Click="btnNewMission_Click">NEW MISSION</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btTravel" >Travel</Button>
+        <Label Style="{StaticResource MWLabel}" Margin="0,10,0,0">Manage</Label>
+        <Button Style="{StaticResource MWButton}" x:Name="btLoadout" Margin="0">Loadout</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btRoster">Roster</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="Inventory">Inventory</Button>
+        <Label Style="{StaticResource MWLabel}" Margin="0,10,0,0">Logs</Label>
+        <Button Style="{StaticResource MWButton}" x:Name="btMissionLog" Margin="0,0,0,0">Mission Log</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btTravelLog">Travel Log</Button>
+        <Label Style="{StaticResource MWLabel}" Margin="0,10,0,0">System</Label>
+        <Button Style="{StaticResource MWButton}" x:Name="btSettings" Margin="0">Settings</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btnHide" Click="btnHide_Click">HIDE </Button>
         <Button Style="{StaticResource MWButton}" x:Name="btnClose" Click="btnClose_Click" >CLOSE APP</Button>
     </StackPanel>
 </UserControl>
