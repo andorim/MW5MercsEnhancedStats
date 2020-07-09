@@ -41,5 +41,9 @@ namespace MW5MercsEnhancedStats.Controlls
             App.main.frMain.Navigate(App.newMission);
         }
 
+        private void btTravel_Click(object sender, RoutedEventArgs e)
+        {
+            App.main.frMain.Navigate(new TravelPage());
+        }
     }
 }

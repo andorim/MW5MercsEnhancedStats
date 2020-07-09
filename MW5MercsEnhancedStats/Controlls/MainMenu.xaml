@@ -18,7 +18,7 @@
         <Image Source="../Resources/Pictures/Logo145.png" Width="145" Height="145"></Image>
         <Label Style="{StaticResource MWLabel}">Action</Label>
         <Button Style="{StaticResource MWButton}" Margin="0"  x:Name="btnNewMission" Click="btnNewMission_Click">NEW MISSION</Button>
-        <Button Style="{StaticResource MWButton}" x:Name="btTravel" >Travel</Button>
+        <Button Style="{StaticResource MWButton}" x:Name="btTravel" Click="btTravel_Click" >Travel</Button>
         <Label Style="{StaticResource MWLabel}" Margin="0,10,0,0">Manage</Label>
         <Button Style="{StaticResource MWButton}" x:Name="btLoadout" Margin="0">Loadout</Button>
         <Button Style="{StaticResource MWButton}" x:Name="btRoster">Roster</Button>

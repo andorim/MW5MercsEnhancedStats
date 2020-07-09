@@ -18,6 +18,10 @@
         <StackPanel Orientation="Vertical" Margin="3" >
             <StackPanel x:Name="spNavigation" Orientation="Horizontal" MouseDown="spNavigation_MouseDown" Width="1350" Height="40" Background="#4C000000">
                 <Button x:Name="btMenu" Click="btMenu_Click" Width="40" Style="{StaticResource HamburgerButton}">=</Button>
+                <Label Style="{StaticResource MWLabel}" FontSize="12" VerticalContentAlignment="Center" Margin="600,0,0,0">System:</Label>
+                <TextBox IsReadOnly="true" Width="150" HorizontalContentAlignment="Right" x:Name="tbSystem" >Terra</TextBox>
+                <Label Style="{StaticResource MWLabel}" FontSize="12" VerticalContentAlignment="Center" Margin="150,0,0,0">CBills:</Label>
+                <TextBox IsReadOnly="True" Width="150" HorizontalContentAlignment="Right" x:Name="tbCbills">1752000</TextBox>
             </StackPanel>
             <Grid x:Name="grMain" HorizontalAlignment="Left">
                 <Grid.RowDefinitions>
